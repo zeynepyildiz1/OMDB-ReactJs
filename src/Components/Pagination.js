@@ -100,6 +100,7 @@ export default class Pagination extends Component {
         }
 
         return (
+            <div className="pagination">
             <ul className="pagination">
                 <li className={pager.currentPage === 1 ? 'disabled' : ''}>
                     <a onClick={() => this.setPage(1)}>First</a>
@@ -119,6 +120,7 @@ export default class Pagination extends Component {
                     <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
                 </li>
             </ul>
+            </div>
         );
     }
 }
