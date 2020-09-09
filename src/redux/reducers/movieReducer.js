@@ -6,8 +6,8 @@ const initialState={
 export default function movieReducer(state = initialState, action) {
   switch (action.type) {
     case actionTypes.GET_MOVIES:
-      {console.log(action.payload);return action.payload;}
+      {console.log(action.payload);return {movies:action.payload}}
       default:
-      {return state;}
+      {console.log("buraya giriyo");return state;}
   }
 }
